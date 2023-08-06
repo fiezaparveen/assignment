@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,sum,diff,product;
+    printf("enter the two numbers\n");
+    scanf("%d%d",&a,&b);
+    sum=a+b;
+    diff=a-b;
+    product=a*b;
+    if(sum%2==0)
+    printf("the sum of two numbers %d %d is even\n",a,b);
+    else
+    printf("the sum of two numbers %d %d is odd\n",a,b);
+    if(diff%2==0)
+    printf("the diff of two numbers %d %d is even\n",a,b);
+    else
+    printf("the diff of two numbers %d %d is odd\n",a,b);
+    if(product%2==0)
+    printf("the product of two numbers %d %d is even\n",a,b);
+    else
+    printf("the product of two numbers %d %d is odd\n",a,b);
+    
+    return 0;
+}
