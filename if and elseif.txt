@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+   int i, n,sum=0;
+   float avg;
+   printf("enter the number of subject\n");
+   scanf("%d",&n);
+   int mark[n];
+   printf("enter the marks obtained in each subject out of 100\n");
+   for(i=0;i<n;i++)
+   scanf("%d",&mark[i]);
+   for(i=0;i<n;i++)
+   sum=sum+mark[i];
+   avg=sum/n;
+   printf("average obtained is %f",avg);
+   if(avg>=90)
+   printf("excellent");
+   else if(avg>=70&&avg<=89)
+   printf("very good");
+   else if (avg>=40&&avg<=69)
+   printf("good");
+   else
+   printf("poor");
+    return 0;
+}
